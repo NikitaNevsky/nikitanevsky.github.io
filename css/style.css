@@ -611,6 +611,10 @@ input:focus {
     border: 2px solid #53d33c;
 }
 
+.offer-buttons .active {
+    border: 2px solid #53d33c;
+}
+
 .offer-border {
     position: absolute;
     z-index: 10;
@@ -1606,4 +1610,38 @@ input:focus {
 .social-list {
     margin: 30px auto 0;
     text-align: center;
+}
+
+.scroll-menu {
+    background: url('../img/header.jpg');
+    padding: 12px 0;
+    position: fixed;
+    top: -60px;
+    width: 100%;
+    z-index: 10000;
+    transition: .3s;
+}
+
+.scroll-menu_content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-h {
+    margin-top: -3px;
+}
+
+.logo-h a {
+    font-weight: 700;
+    font-size: 36px;
+    color: #53d33c;
+}
+
+.scroll-menu .menu {
+    margin-top: 0;
+    margin-left: 65px;
+}
+
+.sticky {
+    top: 0;
 }
