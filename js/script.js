@@ -97,3 +97,12 @@ $('.arrow-prev').on('click', function() {
  $('.arrow-next').on('click', function() {
      $('.magazines-slider').slick('slickNext');
  });
+
+ $(window).scroll(function() {
+    if ($(this).scrollTop() > 200){
+        $('.scroll-menu').addClass("sticky");
+    }
+    else{
+        $('.scroll-menu').removeClass("sticky");
+    }
+});
