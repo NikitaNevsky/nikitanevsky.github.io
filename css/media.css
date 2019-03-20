@@ -1,0 +1,273 @@
+@media screen and (max-width: 660px) {
+    .scroll-menu {
+        display: none !important;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header-contacts span {
+        display: none;
+    }
+
+    .mail {
+        display: none;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .header-content {
+        padding-top: 55px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .phone-icon img {
+        width: 20px;
+        filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(35deg) brightness(240%) contrast(101%);
+    }
+
+    .phone-icon a {
+        padding-top: 3px;
+    }
+
+    .slideshow .slick-dots {
+        display: none!important;
+    }
+
+    .header-content {
+        width: 85%;
+    }
+
+    .logo {
+        width: 85%;
+    }
+
+    .slideshow-text h1 {
+        font-size: 36px;
+    }
+
+    .slideshow-text p {
+        font-size: 18px;
+    }
+
+    .offer-border {
+        bottom: 38%;
+        left: 41%;
+    }
+
+    .offer-buttons {
+        width: 85%;
+        flex-wrap: wrap;
+    }
+
+    .offer-buttons a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .about-content_right {
+        display: none;
+    }
+
+    .about h2 {
+        font-size: 36px;
+        line-height: 42px;
+        width: 98%;
+    }
+
+    .about h2 span:after {
+        width: 215px;
+        bottom: -25%;
+        background-size: 100%;
+    }
+
+    .about {
+        padding: 65px 0 50px;
+    }
+
+    .about-content_text {
+        margin-top: 30px;
+    }
+
+    .skills {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+
+    .skills h2 {
+        width: 100%;
+    }
+
+    .promo .advantages .item {
+        float: none;
+        width: 100% !important;
+        display: block;
+        height: auto;
+    }
+
+    .promo .advantages {
+        display: none;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .skills-list {
+        display: block;
+    }
+
+    .skills-item {
+        text-align: center;
+    }
+
+    .skills-text {
+        margin-bottom: 60px;
+    }
+
+    .skills-item:after {
+        bottom: 30px;
+        left: 46%
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #2dad17;
+        opacity: 1;
+    }
+
+    .slick-dots li button:before {
+        font-size: 10px;
+        color: #e0e0e0;
+        opacity: 1;
+    }
+
+    .catalog-top .btn {
+        display: none;
+    }
+
+    .catalog-text {
+        width: 100%;
+    }
+
+    .catalog {
+        padding-top: 50px;
+    }
+
+    .catalog-text {
+        margin-top: 30px;
+    }
+
+    .portfolio_grid_wrapper.tg_two_cols,
+    .portfolio_grid_wrapper.tg_three_cols {
+        height: auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .specifications-list {
+        display: none;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .tours-list {
+        display: block;
+    }
+
+    .tours-item_title {
+        margin-bottom: 60px;
+    }
+
+    .tours-item {
+        display: flex!important;
+        justify-content: center;
+    }
+
+    .virtual-tours {
+        padding-bottom: 55px;
+    }
+
+    .slider-content_right {
+        display: none;
+    }
+
+    .slider-arrows {
+        display: none;
+    }
+
+    .magazines-slider {
+        width: 100%;
+    }
+
+    .adress-slider {
+        width: 100%;
+    }
+
+    .footer-content {
+        background-size: 100%;
+    }
+
+    .footer-text {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-bottom {
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .copyright,
+    .pravo {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .copyright {
+        margin-bottom: 10px;
+    }
+
+    .pravo {
+        margin-bottom: 5px;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .social-icon:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .tabs__content {
+        margin-top: 30px;
+    }
+    
+    .tabs-btn {
+        display: block;
+        color: #121212;
+        margin: 20px auto 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .blog-item {
+        width: 100%;
+    }
+}
