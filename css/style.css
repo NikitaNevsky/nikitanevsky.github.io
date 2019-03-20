@@ -545,6 +545,10 @@ input:focus {
     cursor: pointer;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .mail {
     font-size: 16px;
     color: #fff;
@@ -695,7 +699,7 @@ input:focus {
 }
 
 .skills-list {
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin-top: 65px;
 }
@@ -1616,7 +1620,7 @@ input:focus {
     background: url('../img/header.jpg');
     padding: 12px 0;
     position: fixed;
-    top: -60px;
+    top: -1000px;
     width: 100%;
     z-index: 10000;
     transition: .3s;
@@ -1644,4 +1648,29 @@ input:focus {
 
 .sticky {
     top: 0;
+}
+
+.tabs-btn {
+    display: none;
+}
+
+.blog-item {
+    width: 30%;
+    margin-bottom: 70px;
+}
+
+.blog-item .portfolio_grid_wrapper.tg_two_cols,
+.blog-item .portfolio_grid_wrapper.tg_three_cols{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.blog-title a {
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    color: #121212;
+    display: block;
+    line-height: 21px;
+    font-weight: 700;
 }
