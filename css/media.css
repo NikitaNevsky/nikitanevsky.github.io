@@ -20,7 +20,7 @@
     }
 
     .header-content {
-        padding-top: 55px;
+        padding: 45px 4% 0;
     }
 
     .phone {
@@ -41,11 +41,12 @@
     }
 
     .header-content {
-        width: 85%;
+        /*width: 85%;*/
+        width: 100%;
     }
 
     .logo {
-        width: 85%;
+        width: 100%;
     }
 
     .slideshow-text h1 {
@@ -62,7 +63,7 @@
     }
 
     .offer-buttons {
-        width: 85%;
+        width: 100%;
         flex-wrap: wrap;
     }
 
@@ -265,9 +266,81 @@
 
     .burger-menu {
         display: block;
+        position: absolute;
+        top: 78%;
+        left: 20px;
+        transform: translateY(-50%);
+        z-index: 99999;
     }
 
     .blog-item {
         width: 100%;
+    }
+
+    /*-----------BURGER-----------*/
+    .menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        background-color: #fff;
+        padding: 100px 20px 20px;
+        margin: 0;
+        transition: .3s;
+        z-index: 9999;
+    }
+    .menu.show {
+        transition: .3s;
+        left: 0;
+        padding-left: 17%;
+    }
+
+    .menu-item {
+        margin-bottom: 22px;
+    }
+
+    .menu-item a {
+        color: #fff;
+        width: 240px;
+        height: 29px;
+        padding: 13px 20px;
+        vertical-align: middle;
+        background-image: url('../img/link-bg.jpg');
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .tablet-btn {
+        display: block;
+        margin: 40px 0 0 13px;
+    }
+    
+    .menu-dropdown,
+    .dropdown {
+        display: none;
+    }
+
+    .dropdown-mob a {
+        color: #000;
+        background-image: none;
+        padding: 5px 20px;
+    }
+
+    .dropdown-mob li {
+        margin-bottom: 0;
+    }
+
+    .offer-text {
+        text-align: center;
+        width: 100%;
+        left: 0;
+        bottom: 42%;
+    }
+
+    .slideshow .slider .item img {
+        width: 1300px;
     }
 }
