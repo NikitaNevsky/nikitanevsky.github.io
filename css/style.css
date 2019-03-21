@@ -9,6 +9,7 @@ body {
     padding: 0;
     margin: 0;
     line-height: 28px;
+    overflow-x: hidden;
 }
 
 ul, li {
@@ -74,7 +75,7 @@ input:focus {
 }
 
 .container {
-    padding: 0 40px;
+    padding: 0 8%;
     margin: 0;
     position: relative;
 }
@@ -204,6 +205,7 @@ input:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 .slideshow .slick-dots {
     position: absolute;
@@ -212,7 +214,7 @@ input:focus {
     height: auto;
     bottom: auto;
     top: 24%;
-    right: 40px;
+    right: 8%;
     transform: translateY(-50%);
     left: auto;
     color: #fff;
@@ -302,8 +304,12 @@ input:focus {
     position: absolute;
     z-index: 10;
     display: flex;
+    -ms-align-items: center;
+    align-items: center;
     padding-top: 20px;
-    width: 94%;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .menu {
@@ -333,12 +339,18 @@ input:focus {
     background: #fff;
     z-index: 10;
     top: 35px;
-    display: none;
-    transition: .3s;
+    margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s;
+    box-shadow: 0px 15px 60px -19px black;
 }
 
 .menu .menu-item:hover .menu-dropdown {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    margin-top: 0;
 }
 
 .menu-dropdown:before {
@@ -455,12 +467,19 @@ input:focus {
     padding: 40px 60px 45px 55px;
     background: #fff;
     top: 35px;
-    left: -55px;
-    display: none;
+    left: -50px;
+    margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, margin-top 0.3s, visibility 0s linear 0.3s;
+    box-shadow: 0px 15px 60px -19px black;
 }
 
 .menu .menu-item:hover .dropdown{
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    margin-top: 0;
 }
 
 .dropdown:before {
@@ -503,10 +522,6 @@ input:focus {
 .dropdown a:hover:before {
     width: 100%;
     left: 0;
-}
-
-.menu-item .portfolio:hover .dropdown {
-    display: block;
 }
 
 .header-contacts {
@@ -582,12 +597,16 @@ input:focus {
     top: 25%;
     z-index: 3;
     text-align: center;
-    width: 94%;
+    width: 100%;
     margin: auto;
 }
 
 .logo span {
     color: #fff;
+}
+
+.offer {
+    position: relative;
 }
 
 .offer-buttons {
@@ -597,7 +616,11 @@ input:focus {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    width: 94%;
+    width: 100%;
+}
+
+.offer-buttons.none {
+    z-index: 0;
 }
 
 .offer-buttons a {
@@ -628,6 +651,21 @@ input:focus {
     margin: auto;
     bottom: 30%;
     left: 47.5%;
+}
+
+.offer-border.none {
+    z-index: 0;
+}
+
+.offer-text {
+    position: absolute;
+    bottom: 38%;
+    z-index: 3;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    left: 41.5%;
 }
 
 /*--------- About ---------*/
@@ -874,23 +912,9 @@ input:focus {
 #mlk ul li {
     padding-left: 16px;
     position: relative;
-    text-align: left;
+    text-align: center;
 }
-.promo .advantages .item .more li:before,
-.promo .more-text li:before,
-#mlk ul li:before {
-    content: " ";
-    background: transparent url("../img/bullet.png") no-repeat scroll center center;
-    height: 19px;
-    width: 10px;
-    display: block;
-    position: absolute;
-    top: 3px;
-    font-size: 25px;
-    left: 0px;
-    font-weight: bold;
-    color: #41B52D;
-}
+
 .promo .more-text li
 #mlk li {
     font-size: 18px;
@@ -1150,7 +1174,7 @@ input:focus {
 .portfolio_grid_wrapper.tg_two_cols,
 .portfolio_grid_wrapper.tg_three_cols {
     margin-bottom: 4%;
-    height: 212px;
+    /* height: 212px;*/
     overflow: hidden;
 }
 
@@ -1308,10 +1332,10 @@ input:focus {
 }
 
 .elementor .btn {
-     line-height: 45px;
-     color: #121212;
-     margin: 15px auto 0;
- }
+   line-height: 45px;
+   color: #121212;
+   margin: 15px auto 0;
+}
 
 .elementor .btn:hover {
     color: #fff;
@@ -1674,3 +1698,110 @@ input:focus {
     line-height: 21px;
     font-weight: 700;
 }
+
+/*-----------Burger-----------*/
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 600ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill: none;
+    transition: stroke-dasharray 600ms, stroke-dashoffset 600ms;
+    stroke: #fff;
+    stroke-width: 3.5;
+    stroke-linecap: round;
+}
+.ham4 .top {
+    stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+    stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+    stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+    stroke-dashoffset: -68px;
+}
+
+.line.active {
+    stroke: #000;
+}
+
+.tablet-btn {
+    display: none;
+}
+
+.menu-dropdown-wrap,
+.dropdown-mob {
+    display: none;
+}
+
+.classic-mob,
+.modern-mob {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.arrow-mob:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(134deg);
+    left: 250px;
+    top: 14px;
+}
+
+.arrow-mob.show:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(-45deg);
+    left: 250px;
+    top: 20px;
+}
+
+.classic-desk-mob,
+.modern-desk-mob {
+    display: none;
+}
+
+.menu-column_title-mob {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 20px 10px;
+    text-transform: uppercase;
+}
+
+.menu-link-mob {
+    color: #000 !important;
+    font-size: 18px !important;
+    padding: 2px 20px !important;
+    background-image: none !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+/*-----------Burger END-----------*/
+
