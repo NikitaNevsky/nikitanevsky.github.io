@@ -1,3 +1,69 @@
+@media screen and (max-width: 1400px) {
+    .slideshow .slick-dots {
+        top: 28%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .slideshow .slick-dots {
+        top: 30%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .slideshow .slick-dots {
+        top: 32%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        padding: 0 3%;
+    }
+
+    .header-content {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .slideshow .slick-dots {
+        right: 4%;
+        top: 38%;
+    }
+
+    .tours-item {
+        width: 30%;
+    }
+
+    .tours-item_icon {
+        position: relative;
+        top: 20px;
+    }
+
+    .tours-item_icon img {
+        left: 0%;
+        position: absolute;
+        display: block;
+    }
+    .tours-item_photo img {
+        width: 100%;
+    }
+
+    .offer-text {
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .offer-border {
+        left: 46.5%;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+}
+
 @media screen and (max-width: 660px) {
     .scroll-menu {
         display: none !important;
@@ -47,6 +113,7 @@
 
     .logo {
         width: 100%;
+        top: 30%;
     }
 
     .slideshow-text h1 {
@@ -342,5 +409,9 @@
 
     .slideshow .slider .item img {
         width: 1300px;
+    }
+
+    .blog-item {
+        margin-bottom: 40px;
     }
 }

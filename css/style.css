@@ -1332,9 +1332,9 @@ input:focus {
 }
 
 .elementor .btn {
-   line-height: 45px;
-   color: #121212;
-   margin: 15px auto 0;
+    line-height: 45px;
+    color: #121212;
+    margin: 15px auto 0;
 }
 
 .elementor .btn:hover {
@@ -1805,3 +1805,59 @@ input:focus {
 }
 /*-----------Burger END-----------*/
 
+.icon-scroll,.icon-scroll:before {
+    position: absolute;
+    left: 50%
+}
+
+.icon-scroll {
+    width: 20px;
+    height: 35px;
+    margin-left: -10px;
+    position: absolute;
+    bottom: 40px;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 3px #fff;
+    border-radius: 25px;
+    z-index: 99;
+}
+
+.icon-scroll:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    margin-left: -2px;
+    top: 4px;
+    border-radius: 4px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(23px);
+        transform: translateY(23px)
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(23px);
+        transform: translateY(23px)
+    }
+}
