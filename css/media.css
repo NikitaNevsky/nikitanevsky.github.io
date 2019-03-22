@@ -1,22 +1,4 @@
-@media screen and (max-width: 1400px) {
-    .slideshow .slick-dots {
-        top: 28%;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .slideshow .slick-dots {
-        top: 30%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .slideshow .slick-dots {
-        top: 32%;
-    }
-}
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1025px) {
     .container {
         padding: 0 3%;
     }
@@ -36,15 +18,10 @@
     }
 
     .tours-item_icon {
-        position: relative;
+        left: 95px;
         top: 20px;
     }
 
-    .tours-item_icon img {
-        left: 0%;
-        position: absolute;
-        display: block;
-    }
     .tours-item_photo img {
         width: 100%;
     }
@@ -62,9 +39,87 @@
     .menu {
         margin-top: 10px;
     }
+
+    .img-modal {
+        width: 250px;
+    }
+
 }
 
+@media screen and (max-width: 930px) {
+    .img-modal {
+        width: 200px;
+    } 
+    .modal-content {
+        padding: 20px 20px 30px;
+    }
+    .modal-content-close {
+        top: 32px;
+        right: 25px;
+    }
+    .modal-plus-right,
+    .modal-plus-left {
+        top: -98px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modal-input {
+        width: 80px;
+        height: 25px;
+        padding: 5px;
+    }
+    .modal-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .modal-second-title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .form-middle {
+        margin: 0 auto 30px;
+    }
+    .modal-select {
+        margin: 0 auto 40px;
+    }
+    .modal-count {
+        margin-bottom: 40px;
+    }
+    .modal-equally {
+        margin: 0 15px;
+    }
+    .modal-calculate-btn {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+    .modal-total {
+        font-size: 35px;
+    }
+    .modal-consuly-btn {
+        font-size: 25px;
+    }
+    .img-modal {
+        width: 160px;
+    }
+    .form-top {
+        margin: 0 auto 20px;
+    }
+    .modal-plus-right,
+    .modal-plus-left {
+        top: -78px;
+        left: 36px;
+    }
+}
+
+
 @media screen and (max-width: 660px) {
+    .modal-content {
+        top: 5%;
+        width: 90%;
+    }
+
+
     .scroll-menu {
         display: none !important;
     }
@@ -413,5 +468,88 @@
 
     .blog-item {
         margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .modal-title {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .modal-content {
+        top: 2%;
+        width: 95%;
+    }
+    .img-modal {
+        width: 120px;
+        margin: 0 10px;
+    }
+    .form-top {
+        margin: 0 auto 10px;
+    }
+    .modal-input {
+        width: 50px;
+        height: 20px;
+        padding: 5px;
+        margin-right: 5px;
+    }
+    .form-middle {
+        margin: 0 auto 25px;
+    }
+    .modal-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .modal-second-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .modal-count {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .modal-select {
+        margin: 0 auto 30px;
+    }
+
+    .modal-content-close {
+        top: 17px;
+        right: -2px;
+    }
+    .modal-content-close:after {
+        width: 20px;
+        height: 2px;
+    }
+    .modal-content-close:before {
+        width: 20px;
+        height: 2px;
+    }
+    .modal-plus-right,
+    .modal-plus-left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-top,
+    .input-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .modal-select {
+        width: 85%;
+        height: 40px;
+        margin: 0 auto 20px;
+    }
+    .modal-consuly-btn {
+        font-size: 20px;
     }
 }

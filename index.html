@@ -311,7 +311,7 @@
           
           <ul class="menu-dropdown-wrap">
 
-            <li class="classic-mob arrow-mob">Классические кухни</li>
+            <li class="classic-mob arrow-mob arrow-mob-top">Классические кухни</li>
 
             <div class="classic-desk-mob">
 
@@ -339,7 +339,7 @@
 
             </div>
 
-            <li class="modern-mob arrow-mob">Современные кухни</li>
+            <li class="modern-mob arrow-mob arrow-mob-bottom">Современные кухни</li>
 
             <div class="modern-desk-mob">
 
@@ -393,7 +393,7 @@
         <li class="menu-item">
           <a href="#">Контакты</a>
         </li>
-        <button class="btn tablet-btn">Рассчитать кухню</button>
+        <button class="btn tablet-btn modal-btn">Рассчитать кухню</button>
         <div class="burger">
           <img src="img/burger.png" alt="Burger">
         </div>
@@ -566,7 +566,7 @@
       <div class="catalog-content">
         <div class="catalog-top">
           <h2>Каталог фасадов</h2>
-          <button class="btn">Рассчитать кухню</button>
+          <button class="btn modal-btn">Рассчитать кухню</button>
         </div>
         <p class="catalog-text">Элитные кухни из высококачественных материалов – идеальное решение для воплощения самых смелых дизайнерских проектов. Кухня премиум-класса должна сочетать в себе функциональность, отличные технические характеристики и эстетичный, утонченный дизайн.</p>
         <div class="tabs">
@@ -777,7 +777,7 @@
       <div class="catalog-content">
         <div class="catalog-top">
           <h2>Наши проекты</h2>
-          <button class="btn">Рассчитать кухню</button>
+          <button class="btn modal-btn">Рассчитать кухню</button>
         </div>
         <p class="catalog-text">Мы осуществляем свою деятельность с 1996 года, предлагая жителям Санкт-Петербурга и области уникальную продукцию, главными особенностями которой являются использование при изготовлении материалов премиум-класса и приемлемая стоимость.</p>
         <div class="tabs">
@@ -1058,7 +1058,7 @@
               <a href="#" class="btn">Показать все</a>
             </div>
           </div>
-          <a href="#" class="tabs-btn btn">Рассчитать кухню</a>
+          <a href="#" class="tabs-btn btn modal-btn">Рассчитать кухню</a>
         </div>
       </div>
     </div>
@@ -1146,7 +1146,7 @@
       <div class="catalog-content">
         <div class="catalog-top">
           <h2>Блог</h2>
-          <button class="btn">Рассчитать кухню</button>
+          <button class="btn modal-btn">Рассчитать кухню</button>
         </div>
         <p class="catalog-text">
           Здесь специалисты нашей компании делятся опытом, рассказывают об особенностях использования различных материалов,  правильном зонировании кухонного пространства и других актуальных проблемах, с которыми можно столкнуться в процессе создания Вашей идеальной кухни.
@@ -1398,7 +1398,7 @@
               <a href="#" class="btn">Показать все</a>
             </div>
           </div>
-          <a href="#" class="tabs-btn btn">Рассчитать кухню</a>
+          <a href="#" class="tabs-btn btn modal-btn">Рассчитать кухню</a>
         </div>
       </div>
     </div>
@@ -1433,6 +1433,80 @@
     </div>
   </footer>
 
+  <div class="popup-modal-calc">
+    <div class="mask"></div>
+
+    <div class="modal-content">
+      <p class="modal-title">Калькулятор стоимости кухни</p>
+      <p class="modal-second-title">Размеры кухни</p>
+
+      <form action="#">
+        <div class="form-top">
+          <input class="modal-input" type="text">
+          <span class="input-label">п.м.</span>
+
+        </div>
+
+        <div class="form-middle">
+          <div class="input-wrap">
+            <input class="modal-input" type="text">
+            <span class="input-label">п.м.</span>
+
+            <div class="modal-plus-left">
+              <img src="img/pluss.png" alt="">
+            </div>
+          </div>
+
+          <div class="img-modal">
+            <img src="img/modal-img.png" alt="">
+          </div>
+
+          <div class="input-wrap">
+            <input class="modal-input" type="text">
+            <span class="input-label">п.м.</span>
+
+            <div class="modal-plus-right">
+              <img src="img/pluss.png" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <p class="modal-second-title">Тип фасада</p>
+        
+        <select class="modal-select" name="">
+          <option selected>Не выбран</option>
+          <option value="">Белый</option>
+          <option value="">Синий</option>
+          <option value="">Черный</option>
+          <option value="">Красный</option>
+        </select>
+
+        <p class="modal-second-title">Столешница</p>
+
+        <select class="modal-select" name="">
+          <option selected>Не выбран</option>
+          <option value="">Белый</option>
+          <option value="">Синий</option>
+          <option value="">Черный</option>
+          <option value="">Красный</option>
+        </select>
+
+        <div class="modal-count">
+          <button type="submite" value="" class="modal-calculate-btn">Расчитать стоимость</button>
+
+          <span class="modal-equally">=</span>
+
+          <span class="modal-total">255 000 <span class="modal-currency">руб.</span></span>
+        </div>
+
+        <button type="submite" value="" class="modal-consuly-btn">Отправить просчет в магазин</button>
+        
+      </form>
+
+      <span class="modal-content-close"></span>
+    </div>
+  </div>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
   <!-- arcticModal -->
@@ -1440,5 +1514,6 @@
   <script src="slick/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 </html>

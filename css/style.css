@@ -1838,6 +1838,215 @@ input:focus {
     animation-name: scroll
 }
 
+
+
+
+
+
+
+/*------------------MODALKA------------------*/
+.popup-modal-calc {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    overflow: auto;
+}
+
+.mask {
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: rgba(0, 27, 42, 0.6);
+}
+
+.modal-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: #fff;
+    padding: 45px 45px 100px;
+    z-index: 9999999;  
+}
+.modal-title {
+    color: #000;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.modal-second-title {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.modal-input {
+    width: 120px;
+    height: 35px;
+    padding: 5px;
+    border-top: none;
+    border: 1px solid #a3a3a3;
+    color: #000;
+    font-size: 18px;
+    margin-right: 10px;
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(163,163,163,1);
+    -moz-box-shadow: inset 0px 1px 2px 0px rgba(163,163,163,1);
+    box-shadow: inset 0px 1px 2px 0px rgba(163,163,163,1);
+}
+.modal-select {
+    display: block;
+    width: 400px;
+    height: 48px;
+    padding: 5px;
+    border-top: none;
+    border: 1px solid #a3a3a3;
+    color: #000;
+    font-size: 18px;
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(163,163,163,1);
+    -moz-box-shadow: inset 0px 1px 2px 0px rgba(163,163,163,1);
+    box-shadow: inset 0px 1px 2px 0px rgba(163,163,163,1);
+    margin: 0 auto 60px;
+}
+
+.input-label {
+    color: #4e4e4e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-top {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 0 auto 30px;
+}
+
+.input-wrap {
+    position: relative;
+}
+.modal-plus-left {
+    position: absolute;
+    top: -110px;
+    left: 59px;
+}
+.modal-plus-right {
+    position: absolute;
+    top: -110px;
+    left: 59px;
+}
+
+.form-middle {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 0 auto 70px;
+}
+
+.img-modal {
+    margin: 0 20px;
+}
+.img-modal img {
+    width: 100%;
+}
+.modal-count {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.modal-calculate-btn {
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ea4141;
+    padding: 7px 20px;
+    cursor: pointer;
+    border: none;
+}
+.modal-consuly-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    border-bottom: 1px solid #909090;
+    padding-bottom: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.modal-equally {
+    font-size: 24px;
+    margin: 0 30px;
+}
+.modal-total {
+    font-size: 48px;
+    font-weight: bold;
+}
+.modal-currency {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-content-close {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.modal-content-close:after {
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+    top: 0;
+    transform: rotate(45deg);
+}
+.modal-content-close:before {
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+
+
+
 @-webkit-keyframes scroll {
     0% {
         opacity: 1

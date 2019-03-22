@@ -26,22 +26,27 @@ $(document).ready(function () {
 
   $('.classic-mob').on('click', function () {
     $('.classic-desk-mob').slideToggle('');
-    $('.arrow-mob').toggleClass('show');
+    $('.arrow-mob-top').toggleClass('show');
   });
 
   $('.modern-mob').on('click', function () {
     $('.modern-desk-mob').slideToggle('');
-    $('.arrow-mob').toggleClass('show');
+    $('.arrow-mob-bottom').toggleClass('show');
   });
 
-  // $('.menu-catalog-mob').on('click', function () {
-  //   $('.menu-dropdown-mob').slideToggle('');
-  //   $('.classic-mob, .modern-mob').addClass('show');
-  // });
+  //modalka
+
+  $('.modal-btn').on('click', function () {
+    $('.popup-modal-calc').fadeIn('');
+    $('body').css('overflow', 'hidden');
+  });
+
+  $('.modal-content-close').on('click', function () {
+    $('.popup-modal-calc').fadeOut('');
+    $('body').css('overflow', 'auto');
+  });
   
-  // .classic-mob.show,
-  // .modern-mob.show
-  //burger-END
+
 });
 
 var $slider = $('.slideshow .slider'),
