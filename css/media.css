@@ -113,6 +113,54 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .form-wrap-letter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .modal-input-letter {
+        width: 94%;
+        height: 30px;
+        padding: 10px;
+    }
+    .modal-input-textarea {
+        width: 94%;
+        height: 70px;
+        padding: 10px;
+    }
+    .input-label-letter {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-wrap-checkbox {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .input-policy {
+        margin: 0;
+       
+    }
+    .input-label-checkbox {
+       
+    }
+}
+
+
 @media screen and (max-width: 660px) {
     .modal-content {
         top: 5%;
@@ -539,7 +587,11 @@
         flex-direction: column;
         align-items: center;
     }
-
+    .form-wrap-letter {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
 }
 
 

@@ -1887,6 +1887,9 @@ input:focus {
     text-align: center;
     margin-bottom: 50px;
 }
+.modal-title_letter {
+    text-align: left;
+}
 .modal-second-title {
     color: #000;
     font-size: 30px;
@@ -2043,6 +2046,50 @@ input:focus {
     top: 0;
     transform: rotate(-45deg);
 }
+
+.form-wrap-letter {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.modal-letter-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.input-label-letter {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 40%;
+}
+
+.modal-input-letter {
+    width: 60%;
+    height: 35px;
+    padding: 10px;
+}
+
+.modal-input-textarea {
+    width: 60%;
+    height: 100px;
+    padding: 10px;
+}
+
+.modal-policy {
+    text-decoration: underline;
+}
+.input-policy {
+    margin-right: auto;
+}
+
 
 
 

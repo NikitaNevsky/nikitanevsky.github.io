@@ -43,8 +43,15 @@ $(document).ready(function () {
 
   $('.modal-content-close').on('click', function () {
     $('.popup-modal-calc').fadeOut('');
+    $('.popup-modal-letter').fadeOut('');
     $('body').css('overflow', 'auto');
   });
+
+  $('.letter-btn').on('click', function () {
+    $('.popup-modal-letter').fadeIn('');
+    $('body').css('overflow', 'hidden');
+  });
+  
   
 
 });
